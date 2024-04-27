@@ -1,0 +1,17 @@
+Increase Import Size in Database (Localhost):
+----------------------------------------------------------------------
+
+Step1: Just change your php.ini(xampp/php/php.ini) file, it worked for me!
+
+Step2: Make sure you're editing php.ini, not php-development.ini or php-production.ini 
+
+Step3:
+
+max_execution_time = 5000
+max_input_time = 5000
+memory_limit = 1000M
+post_max_size = 750M
+upload_max_filesize = 750M
+
+
+And, don't forget to restart Apache Module from XAMPP Control Panel
