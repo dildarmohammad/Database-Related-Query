@@ -1,0 +1,33 @@
+Import MySQL Database Using a Single CMD Command
+
+Syntax
+
+mysql -u USERNAME -p DATABASE_NAME < PATH_TO_SQL_FILE
+
+Example (Windows / Laragon / XAMPP)
+
+If you want to import blog.sql into student database:
+
+mysql -u root -p student < D:\backup\blog.sql
+
+Another Example
+
+mysql -u root -p blogs < D:/Website-Backup/blog-db/blogs.sql
+
+Press Enter, then type your MySQL password → import will start.
+
+How to know it's completed?
+
+If the CMD prompt returns normally
+
+Example
+
+C:\> mysql -u root -p student < D:\backup\blog.sql
+C:\>
+
+No error message = Import finished successfully.
+
+If the import was still running, the cursor would keep blinking and CMD would be busy.
+
+
+
